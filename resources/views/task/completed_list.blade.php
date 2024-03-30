@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>完了タスクの一覧</title>
-    </head>
-    <body>
+@extends('layout')
+
+{{-- メインコンテンツ--}}
+@section('contents')
         <h1>完了タスクの一覧</h1>
          <a href="/task/list">タスク一覧に戻る</a><br>
          <table border="1">
@@ -46,5 +42,4 @@
         <menu label="リンク">
         <a href="/logout">ログアウト</a><br>
         </menu>
-    </body>
-</html>
+@endsection

@@ -2,11 +2,7 @@
 
 {{-- メインコンテンツ--}}
 @section('contents')
-        <h1>ログイン</h1>
-        @if (session('user_register_success') == true)
-            ユーザを登録しました!!<br>
-        @endif
-
+        <h1>会員登録</h1>
         @if ($errors->any())
             <div>
             @foreach ($errors->all() as $error)
@@ -14,11 +10,11 @@
             @endforeach
             </div>
         @endif
-        <form action="/login" method="post">
+        <form action="/user/register" method="post">
             @csrf
-            email：<input name="email" value="{{ old('email') }}"><br>
+            名前：<input name="name" type="text"><br>
+            email：<input name="email" type="email"><br>
             パスワード：<input name="password" type="password"><br>
-            <button>ログインする</button><br>
-        <a href="/user/register">会員登録</a><br>
+            <button type="submit">登録</button><br>
         </form>
 @endsection
