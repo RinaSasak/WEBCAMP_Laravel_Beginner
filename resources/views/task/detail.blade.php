@@ -7,7 +7,7 @@
 @section('contents')
         <h1>タスク詳細閲覧</h1>
         @if (session('front.task_edit_success') == true)
-            タスクを編集しました!!<br>
+            タスクを編集しました！！<br>
         @endif
         
         タスク名: {{ $task->name }}<br>

@@ -7,13 +7,13 @@
 @section('contents')
         <h1>タスクの登録</h1>
             @if (session('front.task_register_success') == true)
-                タスクを登録しました!!<br>
+                タスクを登録しました！！<br>
             @endif
             @if (session('front.task_delete_success') == true)
-                タスクを削除しました!!<br>
+                タスクを削除しました！！<br>
             @endif
             @if (session('front.task_completed_success') == true)
-                タスクを完了にしました!!<br>
+                タスクを完了にしました！！<br>
             @endif
             @if (session('front.task_completed_failure') ==true)
                 タスクの完了に失敗しました....<br>

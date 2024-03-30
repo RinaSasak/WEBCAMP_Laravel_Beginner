@@ -2,7 +2,7 @@
 
 {{-- メインコンテンツ--}}
 @section('contents')
-        <h1>会員登録</h1>
+        <h1>ユーザ登録</h1>
         @if ($errors->any())
             <div>
             @foreach ($errors->all() as $error)
@@ -15,6 +15,6 @@
             名前：<input name="name" type="text"><br>
             email：<input name="email" type="email"><br>
             パスワード：<input name="password" type="password"><br>
-            <button type="submit">登録</button><br>
+            <button type="submit">登録する</button><br>
         </form>
 @endsection
