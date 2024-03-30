@@ -40,10 +40,11 @@ Route::middleware(['auth'])->group(function () {
     //
     Route::get('/logout', [AuthController::class, 'logout']);
     Route::get('/completed_tasks/list', [CompletedTaskController::class, 'list']);
+});
 // 会員登録
 Route::get('user/register', [UserController::class, 'index']);
 Route::post('/user/register', [UserController::class, 'register']);
-});
+
 
 // 管理画面
 Route::prefix('/admin')->group(function() {
